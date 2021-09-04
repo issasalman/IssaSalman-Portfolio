@@ -25,6 +25,7 @@ import team1 from "assets/img/theme/team-1-800x800.jpg";
 import team2 from "assets/img/theme/team-2-800x800.jpg";
 import team3 from "assets/img/theme/team-3-800x800.jpg";
 import team4 from "assets/img/theme/issaface.jfif";
+import pic201 from "assets/img/theme/projectcar.JPG";
 
 // reactstrap components
 import {
@@ -98,13 +99,11 @@ class Landing extends React.Component {
                         app by learning HTML CSS JS python react node mongo and
                         everyone I need in the future
                       </p>
-                    
                     </Col>
                   </Row>
                 </div>
               </Container>
               {/* SVG separator */}
-            
             </section>
             {/* 1st Hero Variation */}
           </div>
@@ -116,6 +115,12 @@ class Landing extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
+                          <img
+                            alt="..."
+                            className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                            src={pic201}
+                            style={{ width: "200px" }}
+                          />
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <i className="ni ni-check-bold" />
                           </div>
@@ -130,10 +135,10 @@ class Landing extends React.Component {
                           </p>
                           <div>
                             <Badge color="primary" pill className="mr-1">
-                            Sell Cars
+                              Sell Cars
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                             Buy Cars
+                              Buy Cars
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
                               Rent Cars
@@ -145,10 +150,11 @@ class Landing extends React.Component {
                             href="201 project"
                             onClick={(e) => {
                               e.preventDefault();
-                              window.location.href='https://fastauto5.github.io/FastAuto/';
-                              }}
+                              window.location.href =
+                                "https://fastauto5.github.io/FastAuto/";
+                            }}
                           >
-                           View project
+                            View project
                           </Button>
                         </CardBody>
                       </Card>
@@ -160,13 +166,9 @@ class Landing extends React.Component {
                             <i className="ni ni-istanbul" />
                           </div>
                           <h6 className="text-success text-uppercase">
-                            Build Something
+                            301 Final project
                           </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
+                          <p className="description mt-3">Still in progress</p>
                           <div>
                             <Badge color="success" pill className="mr-1">
                               business
@@ -196,13 +198,9 @@ class Landing extends React.Component {
                             <i className="ni ni-planet" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                            Prepare Launch
+                            401 Final project
                           </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
+                          <p className="description mt-3">Still in progress</p>
                           <div>
                             <Badge color="warning" pill className="mr-1">
                               marketing
@@ -220,7 +218,7 @@ class Landing extends React.Component {
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
                           >
-                          View project
+                            View project
                           </Button>
                         </CardBody>
                       </Card>
@@ -230,9 +228,7 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-        
-       
-        
+
           <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
@@ -288,7 +284,7 @@ class Landing extends React.Component {
                     </div>
                   </div>
                 </Col>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
+                {/* <Col className="mb-5 mb-lg-0" lg="3" md="6">
                   <div className="px-4">
                     <img
                       alt="..."
@@ -374,6 +370,7 @@ class Landing extends React.Component {
                     </div>
                   </div>
                 </Col>
+                */}
                 <Col className="mb-5 mb-lg-0" lg="3" md="6">
                   <div className="px-4">
                     <img
@@ -384,8 +381,8 @@ class Landing extends React.Component {
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
-                        <span className="d-block mb-1">John Doe</span>
-                        <small className="h6 text-muted">Founder and CEO</small>
+                        <span className="d-block mb-1">Issa Salman</span>
+                        <small className="h6 text-muted">Web Developer</small>
                       </h5>
                       <div className="mt-3">
                         <Button
@@ -426,10 +423,11 @@ class Landing extends React.Component {
                   <Row className="align-items-center">
                     <Col lg="8">
                       <h3 className="text-white">
-                      I have a personal pitch for you
+                        I have a personal pitch for you
                       </h3>
                       <p className="lead text-white mt-3">
-                       In the video provided here ill talk about my background and what i'm planning to do
+                        In the video provided here ill talk about my background
+                        and what i'm planning to do
                       </p>
                     </Col>
                     <Col className="ml-lg-auto" lg="3">
@@ -440,7 +438,7 @@ class Landing extends React.Component {
                         href="https://1drv.ms/v/s!AuBq-FAR8VrWpy9XUUBL9Onmx545"
                         size="lg"
                       >
-                      View Video
+                        View Video
                       </Button>
                     </Col>
                   </Row>
@@ -448,9 +446,6 @@ class Landing extends React.Component {
               </Card>
             </Container>
           </section>
-         
-        
-       
         </main>
         <CardsFooter />
       </>
